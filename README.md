@@ -18,11 +18,11 @@ This template is based on 2 scripts:
 In the case of the Nginx Configuration Parser, I integrated its functionality into the parser.py script, but we still MUST thank the author for such an amazing nginx configuration parser (https://github.com/fatiherikli/nginxparser).
 I integrated the Nginx Configuration Parser functions inside my script solely for convenience! I do not claim the copyright of the owner and I openly declare this!
 
-##Installation and use.
+## Installation and use.
 
 The scripts must be installed in the directory with custom parameters zabbix_agentd (by default /etc/zabbix/zabbix_agentd.d/). If your path to the settings of user parameters is different from the standard, then you will need to specify the correct location of all scripts in the file userparameter_ssl.conf.
 
-####Macros:
+#### Macros:
 * {$ CHECK_TIMEOUT} - timeout for waiting for a response from the server when requesting script information
 * {$ CONF_LOCATION} - location with virtual host settings for your nginx web server. IMPORTANT! At the end, specify the '/' sign, otherwise the script will not work. Invalid argument: / etc / nginx / sites-available, valid argument: / etc / nginx / sites-available /
 * {$ SSL_HOST} - the host to which requests will be made. By default, this is localhost
